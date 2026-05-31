@@ -1,0 +1,31 @@
+2026-05-30 23:32:08 INFO  c.quantcast.cookie.cli.ArgValidator - [29e10c58-d9dc-4611-84f9-b3364ddf3fd2] Started argument validation
+2026-05-30 23:32:08 INFO  c.quantcast.cookie.cli.ArgValidator - [c28529dc-2404-464b-9c51-f6824cce2994] File argument received: C:\Users\Pavithra Dillibabu\Documents\cookieLog.txt
+2026-05-30 23:32:08 INFO  c.quantcast.cookie.cli.ArgValidator - [235bbe9b-1f1e-4ccb-8410-483dd7f64259] Date argument received: 2018-12-09
+2026-05-30 23:32:08 INFO  c.quantcast.cookie.cli.ArgValidator - [5e6930ba-cb92-45e4-8c4a-2f6815a46665] Argument validation completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.service.CookieProcessor - [9cc9fe76-8b40-4f52-aff1-6b73dcc4d1a1] Started cookie processing for date: 2018-12-09
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [27166bac-0e49-469c-a550-a060e8ab5d1c] Started aggregating cookie counts for date: 2018-12-09
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [bac2aef0-7cf5-4b5a-b664-60c662d7944d] Cookie extracted: AtY0laUfhglK3lC7
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [2dca2766-cde4-4ef4-b15a-c37e36fa01b8]Csv line parsing completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [d5442098-48aa-4943-ba27-9c7e9cd046c2] Matching cookie found for target date. Cookie: AtY0laUfhglK3lC7
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [bcd1182a-0f73-4c23-a27c-949cb80f224c] Cookie aggregation completed successfully. Total unique cookies: 1
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [bac2aef0-7cf5-4b5a-b664-60c662d7944d] Cookie extracted: SAZuXPGUrfbcn5UA
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [2dca2766-cde4-4ef4-b15a-c37e36fa01b8]Csv line parsing completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [d5442098-48aa-4943-ba27-9c7e9cd046c2] Matching cookie found for target date. Cookie: SAZuXPGUrfbcn5UA
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [bcd1182a-0f73-4c23-a27c-949cb80f224c] Cookie aggregation completed successfully. Total unique cookies: 2
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [bac2aef0-7cf5-4b5a-b664-60c662d7944d] Cookie extracted: 5UAVanZf6UtGyKVS
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [2dca2766-cde4-4ef4-b15a-c37e36fa01b8]Csv line parsing completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [d5442098-48aa-4943-ba27-9c7e9cd046c2] Matching cookie found for target date. Cookie: 5UAVanZf6UtGyKVS
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [bcd1182a-0f73-4c23-a27c-949cb80f224c] Cookie aggregation completed successfully. Total unique cookies: 3
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [bac2aef0-7cf5-4b5a-b664-60c662d7944d] Cookie extracted: AtY0laUfhglK3lC7
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [2dca2766-cde4-4ef4-b15a-c37e36fa01b8]Csv line parsing completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [d5442098-48aa-4943-ba27-9c7e9cd046c2] Matching cookie found for target date. Cookie: AtY0laUfhglK3lC7
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.LogAggregator - [bcd1182a-0f73-4c23-a27c-949cb80f224c] Cookie aggregation completed successfully. Total unique cookies: 3
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [bac2aef0-7cf5-4b5a-b664-60c662d7944d] Cookie extracted: SAZuXPGUrfbcn5UA
+2026-05-30 23:32:08 INFO  c.q.cookie.parser.CsvLogParser - [2dca2766-cde4-4ef4-b15a-c37e36fa01b8]Csv line parsing completed successfully
+2026-05-30 23:32:08 INFO  c.q.cookie.service.CookieProcessor - [f0d98b8b-a961-451f-adcc-db610a148ac6] Cookie aggregation completed. Total unique cookies: 3
