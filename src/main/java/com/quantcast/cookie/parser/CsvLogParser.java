@@ -17,12 +17,12 @@ public class CsvLogParser {
 
         LOGGER.info("[4604c7ee-886d-4e0c-a5b6-0e515e88647a] Started parsing csv line");
         if (line == null || line.trim().isEmpty() || line.startsWith("cookie")) {
-            return null; // Handle empty lines or headers safely
+            return null;
         }
 
         String[] parts = line.split(CSV_DELIMITER);
         if (parts.length < 2) {
-            return null; // Malformed row protection
+            return null;
         }
 
         String cookie = parts[0].trim();

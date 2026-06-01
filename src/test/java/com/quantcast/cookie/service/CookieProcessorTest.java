@@ -43,7 +43,7 @@ class CookieProcessorTest {
                 "cookieB", 3, // Clearly the max
                 "cookieC", 2
         );
-        when(mockLogAggregator.getCookieCountsByDate(dummyFile, targetDate)).thenReturn(simulatedCounts);
+        when(mockLogAggregator.getCookiesFromFile(dummyFile, targetDate)).thenReturn(simulatedCounts);
 
         // Act
         List<String> result = cookieProcessor.process(dummyFile, targetDate);
@@ -62,7 +62,7 @@ class CookieProcessorTest {
         simulatedCounts.put("cookieB", 1);
         simulatedCounts.put("cookieC", 3); // Max tie
 
-        when(mockLogAggregator.getCookieCountsByDate(dummyFile, targetDate)).thenReturn(simulatedCounts);
+        when(mockLogAggregator.getCookiesFromFile(dummyFile, targetDate)).thenReturn(simulatedCounts);
 
         // Act
         List<String> result = cookieProcessor.process(dummyFile, targetDate);
@@ -78,7 +78,7 @@ class CookieProcessorTest {
     void testProcess_EmptyLogCountsReturnsEmptyList() {
         // Arrange
         // Simulating that no entries matched the given date at all
-        when(mockLogAggregator.getCookieCountsByDate(dummyFile, targetDate)).thenReturn(Collections.emptyMap());
+        when(mockLogAggregator.getCookiesFromFile(dummyFile, targetDate)).thenReturn(Collections.emptyMap());
 
         // Act
         List<String> result = cookieProcessor.process(dummyFile, targetDate);

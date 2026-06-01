@@ -22,15 +22,10 @@ public class LogAggregator {
         this.logParser = logParser;
     }
 
-    /**
-     * Ingests the log file and aggregates frequencies exclusively for the target date.
-     * Aborts early if it moves past the target date due to the reverse-chronological sort.
-     */
-    public Map<String, Integer> getCookieCountsByDate(File file, LocalDate targetDate) {
+    public Map<String, Integer> getCookiesFromFile(File file, LocalDate targetDate) {
 
         LOGGER.info("[27166bac-0e49-469c-a550-a060e8ab5d1c] Started aggregating cookie counts for date: {}", targetDate);
         Map<String, Integer> cookieCounts = new HashMap<>();
-        boolean foundTargetDate = false;
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
@@ -39,12 +34,11 @@ public class LogAggregator {
                 if (entry == null) {
                     continue;
                 }
-
-                if (entry.getDate().equals(targetDate)) {
-                    foundTargetDate = true;
+                LocalDate currentDate = entry.getDate();
+                if (currentDate.equals(targetDate)) {
                     cookieCounts.put(entry.getCookie(), cookieCounts.getOrDefault(entry.getCookie(), 0) + 1);
                     LOGGER.info("[d5442098-48aa-4943-ba27-9c7e9cd046c2] Matching cookie found for target date. Cookie: {}", entry.getCookie());
-                } else if (foundTargetDate) {
+                } else if (currentDate.isBefore(targetDate)) {
                     break;
                 }
                 LOGGER.info("[bcd1182a-0f73-4c23-a27c-949cb80f224c] Cookie aggregation completed successfully. Total unique cookies: {}", cookieCounts.size());

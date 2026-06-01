@@ -21,7 +21,7 @@ public class MostActiveCookie {
             File file = new File(validatedArgs.getFileName());
             LocalDate targetDate = LocalDate.parse(validatedArgs.getDateStr());
 
-            List<String> activeCookies = executeCookieAnalysis(file, targetDate);
+            List<String> activeCookies = executeCookieProcessor(file, targetDate);
 
             activeCookies.forEach(System.out::println);
 
@@ -35,7 +35,7 @@ public class MostActiveCookie {
     }
 
 
-    private static List<String> executeCookieAnalysis(File file, LocalDate targetDate) {
+    private static List<String> executeCookieProcessor(File file, LocalDate targetDate) {
 
         CsvLogParser csvParser = new CsvLogParser();
         LogAggregator logAggregator = new LogAggregator(csvParser);

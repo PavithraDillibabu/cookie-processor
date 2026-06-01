@@ -42,11 +42,11 @@ class LogAggregatorTest {
         }
     }
     @Test
-    void testGetCookieCountsByDate_WithExternalCsvFile() {
+    void testGetCookiesFromFile_WithExternalCsvFile() {
         LocalDate targetDate = LocalDate.parse("2018-12-09");
 
 
-        Map<String, Integer> result = logAggregator.getCookieCountsByDate(testLogFile, targetDate);
+        Map<String, Integer> result = logAggregator.getCookiesFromFile(testLogFile, targetDate);
 
         assertEquals(2, result.get("AtY0laUfhglK3lC7"), "AtY0laUfhglK3lC7 should have a count of 2");
     }
